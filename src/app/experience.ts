@@ -77,7 +77,11 @@ export class Sun {
   standalone: true,
   template: `
     <ngt-color *args="['#171717']" attach="background" />
-    <ngt-point-light [position]="[15, 15, 15]" [intensity]="Math.PI" />
+    <ngt-point-light
+      [position]="[15, 15, 15]"
+      [intensity]="Math.PI"
+      [decay]="0"
+    />
 
     <app-knot />
     <app-sun />
@@ -105,8 +109,8 @@ export class Scene {
       sun,
       blendFunction: BlendFunction.SCREEN,
       kernelSize: KernelSize.SMALL,
+      samples: 30,
       // NOTE: enable each option to see the effect
-      // samples: 30,
       // density: 0.97,
       // decay: 0.96,
       // weight: 0.6,
