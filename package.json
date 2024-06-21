@@ -19,6 +19,7 @@
     "@angular/router": "^18.0.0",
     "angular-three": "^2.0.0-beta.236",
     "angular-three-postprocessing": "^2.0.0-beta.236",
+    "maath": "^0.10.7",
     "ngxtension": "^3.5.5",
     "postprocessing": "^6.35.5",
     "rxjs": "~7.8.0",
